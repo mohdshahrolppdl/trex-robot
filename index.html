@@ -19,8 +19,8 @@
 <!-- width: 320px, height: 480px -->
     #sketchfab-frame {
       position: absolute;
-      width: auto; 
-      height: auto; 
+      width: 320px; 
+      height: 480px; 
       margin: auto;
       top: 50%;
       left: 50%;
@@ -39,13 +39,20 @@
 </head>
 <body>
 
-  <iframe id="sketchfab-frame"
-    src="https://sketchfab.com/models/9551e49684f644cf8716a5ac77515237/embed?autostart=1&transparent=1"
-    allow="autoplay; fullscreen; xr-spatial-tracking"
-    allowfullscreen
-    title="Robot T-rex">
-  </iframe>
-
+  <div class="sketchfab-embed-wrapper"> 
+    <iframe title="Mecha T-rex" 
+      frameborder="0" 
+      allowfullscreen 
+      mozallowfullscreen="true" 
+      webkitallowfullscreen="true" 
+      allow="autoplay; fullscreen; xr-spatial-tracking" 
+      xr-spatial-tracking 
+      execution-while-out-of-viewport 
+      execution-while-not-rendered 
+      web-share 
+      src="https://sketchfab.com/models/9551e49684f644cf8716a5ac77515237/embed"> 
+    </iframe>
+  </div>
   <script>
     const start = async () => {
       const mindarThree = new window.MINDAR.IMAGE.MindARThree({
